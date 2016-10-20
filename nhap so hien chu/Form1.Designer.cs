@@ -33,7 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtChu = new System.Windows.Forms.TextBox();
             this.txtchuyen = new System.Windows.Forms.Button();
-            this.txtThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -86,22 +85,11 @@
             this.txtchuyen.UseVisualStyleBackColor = false;
             this.txtchuyen.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtThoat
-            // 
-            this.txtThoat.Location = new System.Drawing.Point(183, 172);
-            this.txtThoat.Name = "txtThoat";
-            this.txtThoat.Size = new System.Drawing.Size(75, 27);
-            this.txtThoat.TabIndex = 5;
-            this.txtThoat.Text = "Thoát";
-            this.txtThoat.UseVisualStyleBackColor = true;
-            this.txtThoat.Click += new System.EventHandler(this.txtThoat_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 241);
-            this.Controls.Add(this.txtThoat);
             this.Controls.Add(this.txtchuyen);
             this.Controls.Add(this.txtChu);
             this.Controls.Add(this.label2);
@@ -110,6 +98,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,7 +111,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtChu;
         private System.Windows.Forms.Button txtchuyen;
-        private System.Windows.Forms.Button txtThoat;
     }
 }
 
